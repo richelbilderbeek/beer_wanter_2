@@ -30,7 +30,7 @@ jobs:
         with:
           python-version: 3.x
       - name: Add the game to the website
-        run: cp lonelier_pong.pde docs/game/
+        run: cp beer_wanter_2.pde docs/game/
       - run: pip install zensical
       - run: zensical build --clean --strict
       - uses: actions/upload-pages-artifact@v4
