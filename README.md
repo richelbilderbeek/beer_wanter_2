@@ -2,7 +2,7 @@
 
 [![Test game](https://github.com/richelbilderbeek/beer_wanter_2/actions/workflows/test_game.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/beer_wanter_2/actions/workflows/test_game.yaml)
 [![Create Zensical website](https://github.com/richelbilderbeek/beer_wanter_2/actions/workflows/create_zensical_website.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/beer_wanter_2/actions/workflows/create_zensical_website.yaml)
-[![gplv3](https://www.gnu.org/graphics/gplv3-88x31.png)](https://www.gnu.org/licenses/gpl.html)
+[![gplv3](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)
 
 BeerWanter 2 is written in Processing.
 
