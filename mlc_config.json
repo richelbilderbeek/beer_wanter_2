@@ -1,6 +1,6 @@
 {
   "ignorePatterns": [
-    { "pattern": "^\\.\\./game/" }
+    { "pattern": "^/beer_wanter_2/game/" }
   ],
   "retryOn429": true,
   "retryCount": 5,
