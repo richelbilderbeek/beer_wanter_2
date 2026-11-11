@@ -1,10 +1,11 @@
 # BeerWanter 2: The Keyboard-Friendly Edition
 
-[![Travis CI logo](TravisCI.png)](https://travis-ci.org)
-[![gplv3](http://www.gnu.org/graphics/gplv3-88x31.png)](http://www.gnu.org/licenses/gpl.html)
-
-[![Build Status](https://travis-ci.org/richelbilderbeek/BeerWanter2.svg?branch=master)](https://travis-ci.org/richelbilderbeek/BeerWanter2)
+[![Test game](https://github.com/richelbilderbeek/beer_wanter_2/actions/workflows/test_game.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/beer_wanter_2/actions/workflows/test_game.yaml)
+[![Create Zensical website](https://github.com/richelbilderbeek/beer_wanter_2/actions/workflows/create_zensical_website.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/beer_wanter_2/actions/workflows/create_zensical_website.yaml)
+[![gplv3](https://www.gnu.org/graphics/gplv3-88x31.png)](https://www.gnu.org/licenses/gpl.html)
 
 BeerWanter 2 is written in Processing.
 
-![BeerWanter 2 screenshot](BeerWanter2.png)
+[Play it online](https://richelbilderbeek.github.io/beer_wanter_2/play/).
+
+![BeerWanter 2 screenshot](docs/BeerWanter2.png)

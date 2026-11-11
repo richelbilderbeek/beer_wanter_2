@@ -11,6 +11,7 @@ on:
       - 'docs/**'
       - zensical.toml
       - beer_wanter_2.pde
+      - scripts/create_game_html.sh
       - PicBeer.png
       - PicHand.png
 
@@ -34,35 +35,7 @@ jobs:
       # The game is run in the browser by Processing.js,
       # see docs/play.md for the iframe that shows it
       - name: Add the game to the website
-        run: |
-          # The sketch and its images
-          cp PicBeer.png PicHand.png docs/game/
-          # Processing.js has no 'fullScreen', so use a fixed size,
-          # and it must preload the images before 'setup' uses their sizes
-          {
-            echo '/* @pjs preload="PicBeer.png,PicHand.png"; */'
-            sed 's/fullScreen();/size(800, 600);/' beer_wanter_2.pde
-          } > docs/game/beer_wanter_2.pde
-          # Processing.js, served by the website itself
-          npm pack --silent processing-js@1.6.6
-          tar xzf processing-js-1.6.6.tgz
-          cp package/processing.min.js docs/game/
-          rm -rf package processing-js-1.6.6.tgz
-          # The page that runs the game
-          cat > docs/game/beer_wanter_2.html << 'EOF'
-          <!DOCTYPE html>
-          <html>
-          <head>
-          <meta charset="utf-8">
-          <title>BeerWanter2</title>
-          <script src="processing.min.js"></script>
-          <style>body { margin: 0; overflow: hidden; }</style>
-          </head>
-          <body>
-          <canvas data-processing-sources="beer_wanter_2.pde" tabindex="0"></canvas>
-          </body>
-          </html>
-          EOF
+        run: ./scripts/create_game_html.sh
       - run: pip install zensical
       - run: zensical build --clean --strict
       - uses: actions/upload-pages-artifact@v4

@@ -1,1 +1,7 @@
 *.exe
+# Created by scripts/create_game_html.sh
+PicBeer.png
+PicHand.png
+beer_wanter_2.html
+beer_wanter_2.pde
+processing.min.js
